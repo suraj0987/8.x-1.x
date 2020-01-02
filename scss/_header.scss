@@ -1,0 +1,12 @@
+// File: _header.scss
+// This file contains all styles related to the header of the site/application.
+header {
+    .branding {
+        border-bottom: 1px solid grey;
+    }
+    .navbar-nav {
+        li {
+            padding: 0;
+        }
+    }
+}

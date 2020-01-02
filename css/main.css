@@ -1,0 +1,24 @@
+header .branding {
+  border-bottom: 1px solid grey; }
+header .navbar-nav li {
+  padding: 0; }
+
+body {
+  margin: 0;
+  font-family: 14px 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 23px;
+  color: #727272; }
+
+.side-bar .menu--sidebar-menu a {
+  font-family: 14px 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 23px;
+  color: #727272; }
+.side-bar .menu--sidebar-menu a:hover {
+  background-color: black;
+  color: yellow; }
+
+/*# sourceMappingURL=main.css.map */
