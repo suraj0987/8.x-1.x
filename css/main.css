@@ -1,7 +1,13 @@
+header a {
+  color: #6d6c6c; }
+header a:hover {
+  color: darkblue; }
 header .branding {
   border-bottom: 1px solid grey; }
 header .navbar-nav li {
-  padding: 0; }
+  padding: 0 20px; }
+header .navbar-toggle .icon-bar {
+  background-color: black; }
 
 body {
   margin: 0;
@@ -10,6 +16,20 @@ body {
   font-style: normal;
   line-height: 23px;
   color: #727272; }
+  body .main-container {
+    padding-top: 15px; }
+  body .page-header {
+    margin-top: 15px; }
+
+.one-edge-shadow {
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+  -moz-box-shadow: 0 8px 6px -6px grey;
+  box-shadow: 0 8px 6px -6px grey; }
+
+.right-side-shadow {
+  -webkit-box-shadow: 1px 3px 6px 1px grey;
+  -moz-box-shadow: 1px 3px 6px 1px grey;
+  box-shadow: 1px 3px 6px 1px grey; }
 
 .side-bar .menu--sidebar-menu a {
   font-family: 14px 'Open Sans', sans-serif;

@@ -1,12 +1,23 @@
 // File: _header.scss
 // This file contains all styles related to the header of the site/application.
 header {
+    a {
+        color: rgb(109, 108, 108);
+    }
+    a:hover {
+        color: darkblue;
+    }
     .branding {
         border-bottom: 1px solid grey;
     }
     .navbar-nav {
         li {
-            padding: 0;
+            padding: 0 20px;
+        }
+    }
+    .navbar-toggle {
+        .icon-bar {
+            background-color: black;
         }
     }
 }

@@ -62,7 +62,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <header class="container-fluid one-edge-shadow" {{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
       {% endif %}
@@ -71,7 +71,6 @@
         {{ page.site_branding }}
       </div>
       <div class="navbar-header">
-
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -142,7 +141,7 @@
         
         {# Content #}
         {% block content %}
-          <div class="col-lg-8"> 
+          <div class="col-lg-8 right-side-shadow"> 
             <a id="main-content"></a>
             {{ page.content }}
           </div>  

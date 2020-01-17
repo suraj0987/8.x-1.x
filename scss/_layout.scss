@@ -7,4 +7,21 @@ body {
     font-style: normal;
     line-height: 23px;
     color: #727272;
+    .main-container {
+        padding-top: 15px;
+    }
+    .page-header {
+        margin-top: 15px;
+    }
+}
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px grey;
+	   -moz-box-shadow: 0 8px 6px -6px grey;
+	        box-shadow: 0 8px 6px -6px grey;
+}
+.right-side-shadow {
+	-webkit-box-shadow: 1px 3px 6px 1px grey;
+	   -moz-box-shadow: 1px 3px 6px 1px grey;
+	        box-shadow: 1px 3px 6px 1px grey;
+    
 }
