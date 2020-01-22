@@ -51,11 +51,6 @@
  * @see html.html.twig
  */
 #}
-<ol>
-  {% for key, value in _logged_in %}
-    <li>{{ key }}</li>
-  {% endfor %}
-</ol>
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
@@ -153,7 +148,7 @@
         
         {# Content #}
         {% block content %}
-          <div class="col-lg-9 main-content right-side-shadow"> 
+          <div class="col-lg-9 main-content content-shadow">
             {{ page.content }}
           </div>  
         {% endblock %}

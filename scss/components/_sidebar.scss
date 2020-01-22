@@ -1,18 +1,17 @@
 .side-bar {
-    .menu--sidebar-menu {
-        a{
+    a{
             font-family:'Open Sans', sans-serif;
             font-size:  14px;
             font-weight: normal;
             font-style: normal;
             line-height: 23px;
             color: #727272;
-        }
-        a:hover {
+    }
+    a:hover {
             background-color: #eeeeee;
             color: darkblue;
-        }
-        li {
+    }
+    li {
             border: 1px solid #b9b9b9;
             border-bottom-style: none;
         }
@@ -24,5 +23,5 @@
             top: 20px;
             right: 15px;
         }
-    }
+    
 }

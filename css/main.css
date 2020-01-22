@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  padding: 0; }
+  margin: 0; }
   body .main-container .breadcr {
     padding: 0; }
 
@@ -45,27 +44,27 @@ h1 {
   -moz-box-shadow: 1px 5px 10px -2px #c7c1c1;
   box-shadow: 1px 5px 10px -2px #c7c1c1; }
 
-.right-side-shadow {
+.content-shadow {
   -webkit-box-shadow: 1px 3px 6px 1px #c7c1c1;
   -moz-box-shadow: 1px 3px 6px 1px #c7c1c1;
   box-shadow: 1px 3px 6px 1px #c7c1c1; }
 
-.side-bar .menu--sidebar-menu a {
+.side-bar a {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   line-height: 23px;
   color: #727272; }
-.side-bar .menu--sidebar-menu a:hover {
+.side-bar a:hover {
   background-color: #eeeeee;
   color: darkblue; }
-.side-bar .menu--sidebar-menu li {
+.side-bar li {
   border: 1px solid #b9b9b9;
   border-bottom-style: none; }
-.side-bar .menu--sidebar-menu .last {
+.side-bar .last {
   border-bottom: 1px solid #b9b9b9; }
-.side-bar .menu--sidebar-menu .caret {
+.side-bar .caret {
   position: absolute;
   top: 20px;
   right: 15px; }
