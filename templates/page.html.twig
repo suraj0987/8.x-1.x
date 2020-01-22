@@ -51,6 +51,11 @@
  * @see html.html.twig
  */
 #}
+<ol>
+  {% for key, value in _logged_in %}
+    <li>{{ key }}</li>
+  {% endfor %}
+</ol>
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
@@ -62,13 +67,19 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header class="container-fluid one-edge-shadow" {{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <header class="container-fluid header-shadow" {{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
       {% endif %}
       <div class="container">
       <div class="branding col-lg-12">
         {{ page.site_branding }}
+      <a href="../user/1"><i class="far fa-user"></i></a>
+      {% if logged_in %}
+      <a href="../user/logout"><i class="fas fa-cog"></i></a>
+      {% else %}
+      <a href="../user/login"><i class="fas fa-cog"></i></a>
+      {% endif %}
       </div>
       <div class="navbar-header">
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
@@ -100,10 +111,19 @@
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
 
+        {# Sidebar First #}
+        {% if page.sidebar_first %}
+          {% block sidebar_first %}
+            <aside class="side-bar col-sm-3" role="complementary">
+              {{ page.sidebar_first }}
+            </aside>
+          {% endblock %}
+        {% endif %}  
+      
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <div class="col-sm-12" role="heading">
+          <div class="breadcr col-lg-9" role="breadcrumb">
             {{ page.header }}
           </div>
         {% endblock %}
@@ -116,38 +136,27 @@
         {# Highlighted #}
         {% if page.highlighted %}
           {% block highlighted %}
-            <div class="highlighted col-lg-12">{{ page.highlighted }}</div>
+            <div class="highlighted col-md-offset-3 col-lg-9">
+            {{ page.highlighted }}
+            </div>
           {% endblock %}
         {% endif %}
 
         {# Help #}
         {% if page.help %}
           {% block help %}
-            <div class="col-lg-12">
+            <div class="col-md-offset-3 col-lg-9">
               {{ page.help }}
             </div>  
           {% endblock %}
         {% endif %}
-
-        <div class="row">
-        {# Sidebar First #}
-        {% if page.sidebar_first %}
-          {% block sidebar_first %}
-            <aside class="side-bar col-sm-3" role="complementary">
-              {{ page.sidebar_first }}
-            </aside>
-          {% endblock %}
-        {% endif %}        
         
         {# Content #}
         {% block content %}
-          <div class="col-lg-8 right-side-shadow"> 
-            <a id="main-content"></a>
+          <div class="col-lg-9 main-content right-side-shadow"> 
             {{ page.content }}
           </div>  
         {% endblock %}
-
-        </div>
       </section>    
   </div>
 {% endblock %}

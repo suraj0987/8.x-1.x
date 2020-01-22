@@ -1,0 +1,28 @@
+.side-bar {
+    .menu--sidebar-menu {
+        a{
+            font-family:'Open Sans', sans-serif;
+            font-size:  14px;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 23px;
+            color: #727272;
+        }
+        a:hover {
+            background-color: #eeeeee;
+            color: darkblue;
+        }
+        li {
+            border: 1px solid #b9b9b9;
+            border-bottom-style: none;
+        }
+        .last{
+            border-bottom: 1px solid #b9b9b9;
+        }
+        .caret {
+            position: absolute;
+            top: 20px;
+            right: 15px;
+        }
+    }
+}

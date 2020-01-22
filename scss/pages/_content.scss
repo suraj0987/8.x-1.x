@@ -1,0 +1,26 @@
+.main-content {
+    .view-header {
+        float: right;
+        border: 1px solid #ffd715;
+        padding: 4px 12px;
+        font-weight: bold;
+    }
+    a {
+        color: black;
+    }
+    a.button:before {
+        content: "+";
+        border: 2.4px solid;
+        border-radius: 100%;
+        padding: 0px 5px;
+        color: black;
+    }
+    .field--name-body {
+        p {
+            padding-top: 40px;
+        }
+    }
+    td {
+        color: black;
+    }
+}

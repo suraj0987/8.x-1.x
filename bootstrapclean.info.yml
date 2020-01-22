@@ -18,6 +18,5 @@ regions:
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
-libraries-extend:
-  bootstrap/framework:
-    - bootstrapclean/framework
+libraries:
+  - bootstrapclean/global-styling

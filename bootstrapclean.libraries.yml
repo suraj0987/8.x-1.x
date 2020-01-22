@@ -1,9 +1,11 @@
-framework:
+global-styling:
   css:
     theme:
       css/main.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css: {type: external, minified: true}
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js: {type: external, minified: true}
 
-# Uncomment for LESS source JavaScript files.
+      # Uncomment for LESS source JavaScript files.
 #  js:
 #    bootstrap/js/affix.js: {}
 #    bootstrap/js/alert.js: {}

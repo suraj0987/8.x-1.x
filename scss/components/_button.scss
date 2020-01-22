@@ -1,0 +1,11 @@
+.region-content {
+    position: relative;
+    .contextual-region {
+        position: unset;
+    }
+    .view-header {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+}
