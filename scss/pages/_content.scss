@@ -1,10 +1,5 @@
 .main-content {
-    .view-header {
-        float: right;
-        border: 1px solid #ffd715;
-        padding: 4px 12px;
-        font-weight: bold;
-    }
+    padding-bottom: 30px;
     a {
         color: black;
     }
@@ -22,5 +17,8 @@
     }
     td {
         color: black;
+    }
+    .page-header {
+        text-align: center;
     }
 }

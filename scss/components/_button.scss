@@ -7,5 +7,20 @@
         position: absolute;
         top: 0px;
         right: 10px;
+        -webkit-transition: background-color 1s;
+        -moz-box-transition: background-color 1s;
+        transition: background-color 1s;
+        float: right;
+        border: 1px solid #ffd715;
+        padding: 4px 12px;
+        font-weight: bold;
+        border-radius: 5%;
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    .view-header:hover {
+        background-color: yellow;
+        text-decoration: none;
     }
 }
