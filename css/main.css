@@ -31,6 +31,9 @@ h1 {
   margin: 0 8px;
   padding-bottom: 5px; }
 
+.select-wrapper:after {
+  color: #e6ca34; }
+
 .region-content {
   position: relative; }
   .region-content .contextual-region {
@@ -62,6 +65,12 @@ h1 {
   .region-content .btn-default:hover {
     background-color: #ffd700;
     color: #000000; }
+  .region-content .btn-info {
+    background-color: #e6ca34;
+    border-color: #cccccc; }
+  .region-content .btn-info:hover {
+    background-color: #000000;
+    color: #ffd700; }
 
 .header-shadow {
   -webkit-box-shadow: 1px 5px 10px -2px #c7c1c1;
@@ -130,6 +139,6 @@ header .navbar-toggle .icon-bar {
   padding: 10px 0;
   margin-left: 20px; }
 .branding i:hover {
-  color: black; }
+  color: #e6ca34; }
 
 /*# sourceMappingURL=main.css.map */
