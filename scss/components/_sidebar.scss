@@ -23,4 +23,10 @@
         top: 20px;
         right: 15px;
     }
+    .dropdown {
+        position: relative;
+        .dropdown-menu {
+            width: 100%;
+        }
+    }
 }

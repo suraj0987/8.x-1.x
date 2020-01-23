@@ -39,9 +39,9 @@ h1 {
     position: absolute;
     top: 0px;
     right: 10px;
-    -webkit-transition: background-color 1s;
-    -moz-box-transition: background-color 1s;
-    transition: background-color 1s;
+    -webkit-transition: background-color 0.5s;
+    -moz-box-transition: background-color 0.5s;
+    transition: background-color 0.5s;
     float: right;
     border: 1px solid #ffd715;
     padding: 4px 12px;
@@ -52,6 +52,16 @@ h1 {
   .region-content .view-header:hover {
     background-color: yellow;
     text-decoration: none; }
+  .region-content .btn-success {
+    background-color: #e7e7e7;
+    color: #333333;
+    border-color: #cccccc; }
+  .region-content .btn-success:hover {
+    background-color: #000000;
+    color: #ffd700; }
+  .region-content .btn-default:hover {
+    background-color: #ffd700;
+    color: #000000; }
 
 .header-shadow {
   -webkit-box-shadow: 1px 5px 10px -2px #c7c1c1;
@@ -82,11 +92,16 @@ h1 {
   position: absolute;
   top: 20px;
   right: 15px; }
+.side-bar .dropdown {
+  position: relative; }
+  .side-bar .dropdown .dropdown-menu {
+    width: 100%; }
 
 header a {
   color: #6d6c6c; }
-header a:hover {
-  color: darkblue; }
+header .menu a:hover {
+  color: black;
+  background-color: white; }
 header .branding {
   border-bottom: 1px solid #b9b9b9; }
 header .navbar-toggle .icon-bar {

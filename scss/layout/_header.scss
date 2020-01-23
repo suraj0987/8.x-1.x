@@ -4,8 +4,9 @@ header {
     a {
         color: rgb(109, 108, 108);
     }
-    a:hover {
-        color: darkblue;
+    .menu a:hover {
+        color: black;
+        background-color: white;
     }
     .branding {
         border-bottom: 1px solid rgb(185, 185, 185);
