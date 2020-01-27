@@ -43,7 +43,7 @@ h1 {
 
 table {
   width: 100%;
-  display: block;
+  display: inline-table;
   max-width: 100%;
   overflow-x: scroll; }
 
@@ -76,7 +76,7 @@ table {
     background-color: #000000;
     color: #ffd700; }
   .region-content .btn-default:hover {
-    background-color: #ffd700;
+    background-color: #ffd715;
     color: #000000; }
   .region-content .btn-info {
     background-color: #e6ca34;
@@ -124,13 +124,15 @@ header a {
 header .menu a:hover {
   color: black;
   background-color: white; }
+header .menu a:active {
+  color: black; }
 header .branding {
   border-bottom: 1px solid #b9b9b9; }
 header .navbar-toggle .icon-bar {
   background-color: black; }
 
 .main-content {
-  padding-bottom: 30px; }
+  padding: 10px 10px 30px 10px; }
   .main-content a {
     color: black; }
   .main-content a.button:before {
@@ -144,7 +146,7 @@ header .navbar-toggle .icon-bar {
   .main-content td {
     color: black; }
   .main-content .page-header {
-    text-align: center; }
+    text-align: left; }
 
 .branding i {
   float: right;

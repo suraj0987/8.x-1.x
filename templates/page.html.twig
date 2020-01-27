@@ -106,32 +106,32 @@
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
 
+    <div class="row">
+      <div class="col-lg-3">
         {# Sidebar First #}
         {% if page.sidebar_first %}
           {% block sidebar_first %}
-            <aside class="side-bar col-sm-3" role="complementary">
+            <aside class="side-bar" role="complementary">
               {{ page.sidebar_first }}
             </aside>
           {% endblock %}
         {% endif %}  
-      
+      </div>
+  <section{{ content_attributes.addClass(content_classes) }}>
+    <div class="col-lg-9"> 
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <div class="breadcr col-lg-9" role="breadcrumb">
+          <div class="breadcr" role="breadcrumb">
             {{ page.header }}
           </div>
         {% endblock %}
       {% endif %}
 
-      {# Content #}
-
-      <section{{ content_attributes.addClass(content_classes) }}>
-
         {# Highlighted #}
         {% if page.highlighted %}
           {% block highlighted %}
-            <div class="highlighted col-md-offset-3 col-lg-9">
+            <div class="highlighted">
             {{ page.highlighted }}
             </div>
           {% endblock %}
@@ -140,22 +140,26 @@
         {# Help #}
         {% if page.help %}
           {% block help %}
-            <div class="col-md-offset-3 col-lg-9">
+            <div class="help">
               {{ page.help }}
             </div>  
           {% endblock %}
         {% endif %}
         
         {# Content #}
-        {% block content %}
-          <div class="col-lg-9 main-content content-shadow">
-            {{ page.content }}
-          </div>  
-        {% endblock %}
-      </section>    
+        {% if page.content %}
+          {% block content %}
+            <div class="main-content content-shadow">
+              {{ page.content }}
+            </div>  
+          {% endblock %}
+        {% endif %}  
+    </div>
+  </section>
   </div>
 {% endblock %}
 
+<div class="row">
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
@@ -163,3 +167,4 @@
     </footer>
   {% endblock %}
 {% endif %}
+</div>
