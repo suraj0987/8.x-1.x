@@ -36,7 +36,6 @@ FEATURES
 	* Bootstrap based theme for Business profile.
 	* Responsive and fully customisable.
 	* It is a generic theme and is best suited for businesses ,portfolio & magazine sites.
-	* Moreover, it can be used as a base theme to give your own theme a very specific business profile look.
 
 CONFIGURATION
 -------------
@@ -47,7 +46,7 @@ No configuration is needed.
 BROWSER COMPATIBILITY
 ---------------------
 
-The theme has been tested on Firefox, Chrome and Safari browsers.
+The theme has been tested on Chrome browser.
 
 
 MAINTAINERS
