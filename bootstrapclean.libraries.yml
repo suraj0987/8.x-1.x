@@ -2,35 +2,31 @@ global-styling:
   css:
     theme:
       css/main.css: {}
-      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css: {type: external, minified: true}
-      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js: {type: external, minified: true}
+      css/font-awesome.min.css: {}
+      # https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css: {type: external, minified: true}
+      # https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js: {type: external, minified: true}
 
-      # Uncomment for LESS source JavaScript files.
-#  js:
-#    bootstrap/js/affix.js: {}
-#    bootstrap/js/alert.js: {}
-#    bootstrap/js/button.js: {}
-#    bootstrap/js/carousel.js: {}
-#    bootstrap/js/collapse.js: {}
-#    bootstrap/js/dropdown.js: {}
-#    bootstrap/js/modal.js: {}
-#    bootstrap/js/tooltip.js: {}
-#    bootstrap/js/popover.js: {}
-#    bootstrap/js/scrollspy.js: {}
-#    bootstrap/js/tab.js: {}
-#    bootstrap/js/transition.js: {}
-
-# Uncomment for SASS source JavaScript files.
-#  js:
-#    bootstrap/assets/javascripts/bootstrap/affix.js: {}
-#    bootstrap/assets/javascripts/bootstrap/alert.js: {}
-#    bootstrap/assets/javascripts/bootstrap/button.js: {}
-#    bootstrap/assets/javascripts/bootstrap/carousel.js: {}
-#    bootstrap/assets/javascripts/bootstrap/collapse.js: {}
-#    bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
-#    bootstrap/assets/javascripts/bootstrap/modal.js: {}
-#    bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
-#    bootstrap/assets/javascripts/bootstrap/popover.js: {}
-#    bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
-#    bootstrap/assets/javascripts/bootstrap/tab.js: {}
-#    bootstrap/assets/javascripts/bootstrap/transition.js: {}
+# attributes:
+#   js:
+#     js/bootstrap.min.js: {}
+#     js/popper.min.js: {}
+#     js/masonry.pkgd.min.js: {}
+#     js/script.js: {}
+#   dependencies:
+#   - core/jquery
+#   - core/drupal
+ 
+font-awesome:
+  remote: https://use.fontawesome.com/releases/v5.6.3/css/all.css:
+  version: 4.5.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+        https://use.fontawesome.com/releases/v5.1.0/css/all.css: { type: external, minified: true }   
+fonts:
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css: { type: external, minified: true }

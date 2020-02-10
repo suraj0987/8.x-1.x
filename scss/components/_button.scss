@@ -1,47 +1,47 @@
 .region-content {
-    position: relative;
-    .contextual-region {
-        position: unset;
+  position: relative;
+  .contextual-region {
+    position: unset;
+  }
+  .view-header {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    -webkit-transition: background-color 0.5s;
+    -moz-box-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    float: right;
+    border: 1px solid #ffd715;
+    padding: 4px 12px;
+    font-weight: bold;
+    border-radius: 5%;
+    a:hover {
+      text-decoration: none;
     }
-    .view-header {
-        position: absolute;
-        top: 0px;
-        right: 10px;
-        -webkit-transition: background-color 0.5s;
-        -moz-box-transition: background-color 0.5s;
-        transition: background-color 0.5s;
-        float: right;
-        border: 1px solid #ffd715;
-        padding: 4px 12px;
-        font-weight: bold;
-        border-radius: 5%;
-        a:hover {
-            text-decoration: none;
-        }
-    }
-    .view-header:hover {
-        background-color: yellow;
-        text-decoration: none;
-    }
-    .btn-success {
-        background-color: #e7e7e7;
-        color: #333333;
-        border-color: #cccccc;
-    }
-    .btn-success:hover {
-        background-color: #000000;
-        color: #ffd700;
-    }
-    .btn-default:hover {
-        background-color: yellow;
-        color: black;
-    }
-    .btn-info {
-        background-color: white;
-        border-color: #cccccc;
-        color: black; 
-    }
-    .btn-info:hover {
-        background-color: yellow;
-    }
+  }
+  .view-header:hover {
+    background-color: yellow;
+    text-decoration: none;
+  }
+  .btn-success {
+    background-color: #e7e7e7;
+    color: #333333;
+    border-color: #cccccc;
+  }
+  .btn-success:hover {
+    background-color: #000000;
+    color: #ffd700;
+  }
+  .btn-default:hover {
+    background-color: yellow;
+    color: black;
+  }
+  .btn-info {
+    background-color: white;
+    border-color: #cccccc;
+    color: black; 
+  }
+  .btn-info:hover {
+    background-color: yellow;
+  }
 }
