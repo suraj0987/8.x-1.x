@@ -1,22 +1,22 @@
-.side-bar {
+.region-sidebar-first {
   a{
     font-family:Lato, sans-serif;
     font-size:  14px;
     font-weight: normal;
     font-style: normal;
     line-height: 23px;
-    color: #727272;
+    color: $navbar-links;
   }
-  .region-sidebar-first a:hover {
-    background-color: #000000;
-    color: #ffd700;
+  .nav a:hover {
+    background-color: $black;
+    color: $hover-text;
   }
   li {
-    border: 1px solid #b9b9b9;
+    border: 1px solid $gray-border;
     border-bottom-style: none;
   }
   .last{
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid $gray-border;
   }
   .caret {
     position: absolute;

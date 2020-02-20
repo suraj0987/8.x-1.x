@@ -13,15 +13,15 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-Bootstrap Clean is a **Drupal 8** theme and is a sub theme of Bootstrap. Bootstrap Clean is  under active development and is powered by **OpenSense Labs**.
+Bootstrap Clean is a **Drupal 8** theme and is a sub theme of Bootstrap. Bootstrap Clean is under active development and is powered by **OpenSense Labs**.
 
 
 REQUIREMENTS
 ------------
 
 To use this theme Bootstrap is required.
-To use the '+ Add New' Button on the view, the Views Add Button Module is required. Also to be able to create nodes with the button,
-permissions are to be granted to their respective roles.
+To use the '+ Add New' Button on the view, the Views Add Button Module is required and when creating a view, place the button on the header section of the view.
+Also to be able to create nodes with the button, permissions are to be granted to their respective roles.
  
 
 INSTALLATION
@@ -53,3 +53,4 @@ MAINTAINERS
 -----------
 
 	* OpenSense Labs - https://www.drupal.org/opensense-labs
+	* Suraj Singh - https://www.drupal.org/u/suraj098

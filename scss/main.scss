@@ -1,9 +1,10 @@
-@import '../scss/base/reset';
-@import '../scss/base/typography';
-@import '../scss/components/button';
-@import '../scss/components/shadow';
-@import '../scss/components/sidebar';
-@import '../scss/layout/navigation';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './base/reset';
+@import './base/typography';
+@import './components/button';
+@import './components/sidebar';
+@import './layout/navigation';
 @import '../scss/layout/content';
 @import '../scss/vendors/fntawsicons';
 @import '../scss/layout/footer';

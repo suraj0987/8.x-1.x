@@ -1,14 +1,17 @@
 .main-content {
   padding: 10px 10px 30px 10px;
+  .content-shadow {
+    @include content-shadow;
+  }
   a {
-    color: black;
+    color: $black;
   }
   a.button:before {
     content: "+";
     border: 2.4px solid;
     border-radius: 100%;
     padding: 0px 5px;
-    color: black;
+    color: $black;
   }
   .field--name-body {
     p {
@@ -16,7 +19,7 @@
     }
   }
   td {
-    color: black;
+    color: $black;
   }
   .page-header {
     text-align: left;

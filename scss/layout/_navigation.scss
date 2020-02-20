@@ -2,25 +2,35 @@
 // This file contains all styles related to the header of the site/application.
 header {
   a {
-    color: rgb(109, 108, 108);
+    color: $navbar-links;
   }
   .menu a:hover {
-    color: black;
-    background-color: white;
+    color: $black;
+    background-color: $white;
   }
   .menu a:active {
-    color: black;
+    color: $black;
   }
-  .branding {
-    border-bottom: 1px solid rgb(185, 185, 185);
+  @media only screen and (min-width: $desktop-breakpoint){
+    .branding {
+      border-bottom: 1px solid $horizontal-line;
+    }
   }
   .navbar-toggle {
     .icon-bar {
-      background-color: black;
+      background-color: $black;
     }
   }
   .dropdown-menu a:hover {
-    background-color: black;
-    color: #ffd700;
+    background-color: $black;
+    color: $hover-text;
+  }
+  @media only screen and (max-width: $mobile-breakpoint){
+    .navbar-toggle {
+      padding: 6px 0px;
+      margin-right: 0;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
   }
 }

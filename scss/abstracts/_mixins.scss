@@ -1,0 +1,17 @@
+// Mixins
+
+@mixin header-shadow {
+  -webkit-box-shadow: 1px 5px 10px -2px $shadow-color;
+  -moz-box-shadow: 1px 5px 10px -2px $shadow-color;
+  box-shadow: 1px 5px 10px -2px $shadow-color;
+}
+@mixin content-shadow {
+  -webkit-box-shadow: 1px 3px 6px 1px $shadow-color;
+  -moz-box-shadow: 1px 3px 6px 1px $shadow-color;
+  box-shadow: 1px 3px 6px 1px $shadow-color;  
+}
+@mixin button-transition {
+  -webkit-transition: background-color 0.5s;
+  -moz-box-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}

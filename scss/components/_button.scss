@@ -7,41 +7,43 @@
     position: absolute;
     top: 0px;
     right: 10px;
-    -webkit-transition: background-color 0.5s;
-    -moz-box-transition: background-color 0.5s;
-    transition: background-color 0.5s;
+    @include button-transition;
     float: right;
-    border: 1px solid #ffd715;
+    border: 1px solid $button-border;
     padding: 4px 12px;
     font-weight: bold;
     border-radius: 5%;
+    a::before {
+      content: '+';
+      font-size: 16px;
+    }
     a:hover {
       text-decoration: none;
     }
   }
   .view-header:hover {
-    background-color: yellow;
+    background-color: $yellow;
     text-decoration: none;
   }
   .btn-success {
-    background-color: #e7e7e7;
-    color: #333333;
-    border-color: #cccccc;
+    background-color: $whiteish;
+    color: $blackish;
+    border-color: $gray;
   }
   .btn-success:hover {
-    background-color: #000000;
-    color: #ffd700;
+    background-color: $black;
+    color: $hover-text;
   }
   .btn-default:hover {
-    background-color: yellow;
-    color: black;
+    background-color: $yellow;
+    color: $black;
   }
   .btn-info {
-    background-color: white;
-    border-color: #cccccc;
-    color: black; 
+    background-color: $white;
+    border-color: $gray;
+    color: $black; 
   }
   .btn-info:hover {
-    background-color: yellow;
+    background-color: $yellow;
   }
 }

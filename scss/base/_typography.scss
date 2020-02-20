@@ -4,7 +4,7 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 23px;
-  color: #909090;
+  color: $font-color;
   .main-container {
     padding-top: 30px;
   }
@@ -13,13 +13,13 @@ body {
   }
 }
 a {
-  color: #928f8f;
+  color: $link-color;
 }
 img {
   width: 100%;
 }
 h1 {
-  color: black;
+  color: $black;
   font-size: 24px;
   font-weight: 540;
 }
@@ -31,10 +31,10 @@ h1 {
   padding-bottom: 5px;
   }
 .select-wrapper:after {
-  color: #e6ca34;
+  color: $theme-color;
 }
 .form-control:focus {
-  border-color: #e6ca34;
+  border-color: $theme-color;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(253, 255, 89, 0.71);
 }
 table {
@@ -42,4 +42,7 @@ table {
    display: inline-table;
    max-width: 100%;
    overflow-x: scroll;
-  }
+}
+.header-shadow {
+  @include header-shadow;
+}

@@ -42,14 +42,13 @@
  * - page.help: Dynamic help text, mostly for admin pages.
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
- * - page.sidebar_second: Items for the second sidebar.
  * - page.footer: Items for the footer region.
  *
  * @ingroup templates
  *
  * @see template_preprocess_page()
  * @see html.html.twig
- */
+ * This is original/
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
@@ -71,23 +70,22 @@
           {{ page.site_branding }}
           <a href="./user"><i class="far fa-user"></i></a>
           {% if logged_in %}
-            <a href="../user/logout"><i class="fas fa-cog"></i></a>
+            <a href="./user/logout"><i class="fas fa-cog"></i></a>
           {% else %}
-          <a href="../user/login"><i class="fas fa-cog"></i></a>
+          <a href="./user/login"><i class="fas fa-cog"></i></a>
           {% endif %}
+          <div class="navbar-header">
+            {# .btn-navbar is used as the toggle for collapsed navbar content #}
+            {% if page.navigation_collapsible %}
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            {% endif %}
+          </div>
         </div>
-        <div class="navbar-header">
-          {# .btn-navbar is used as the toggle for collapsed navbar content #}
-          {% if page.navigation_collapsible %}
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-              <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          {% endif %}
-        </div>
-
         {# Navigation (collapsible) #}
         {% if page.navigation_collapsible %}
           <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -97,7 +95,6 @@
         {% if not navbar_attributes.hasClass(container) %}
           </div>
         {% endif %}
-        </div>
     </header>
   {% endblock %}
 {% endif %}
@@ -106,59 +103,61 @@
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
-      <div class="col-lg-3">
-        {# Sidebar First #}
-        {% if page.sidebar_first %}
-          {% block sidebar_first %}
-            <aside class="side-bar" role="complementary">
-              {{ page.sidebar_first }}
-            </aside>
-          {% endblock %}
-        {% endif %}  
-      </div>
-  <section{{ content_attributes.addClass(content_classes) }}>
-    <div class="col-lg-9"> 
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="breadcr" role="breadcrumb">
-            {{ page.header }}
-          </div>
+
+      {# Sidebar First #}
+      {% if page.sidebar_first %}
+        {% block sidebar_first %}
+          <aside class="col-lg-3" role="complementary">
+            {{ page.sidebar_first }}
+          </aside>
         {% endblock %}
       {% endif %}
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">
-            {{ page.highlighted }}
+      
+      {# Content #}
+      {%
+        set content_classes = [
+          page.sidebar_first is empty ? 'col-lg-12',
+          page.sidebar_first ? 'col-lg-9'
+        ]
+      %}
+      <section{{ content_attributes.addClass(content_classes) }}>  
+      
+        {# Header #}
+        {% if page.header %}
+          {% block header %}
+            <div class="breadcr" role="breadcrumb">
+              {{ page.header }}
             </div>
           {% endblock %}
         {% endif %}
 
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            <div class="help">
+          {# Highlighted #}
+          {% if page.highlighted %}
+            {% block highlighted %}
+              <div class="highlighted">
+                {{ page.highlighted }}
+              </div>
+            {% endblock %}
+          {% endif %}
+
+          {# Help #}
+          {% if page.help %}
+            {% block help %}
               {{ page.help }}
-            </div>  
-          {% endblock %}
-        {% endif %}
-        
-        {# Content #}
-        {% if page.content %}
+            {% endblock %}
+          {% endif %}
+
+          {# Content #}
           {% block content %}
             <div class="main-content content-shadow">
               {{ page.content }}
-            </div>  
+            </div>
           {% endblock %}
-        {% endif %}  
+      </section>
     </div>
-  </section>
   </div>
 {% endblock %}
 
-<div class="row">
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
@@ -166,4 +165,3 @@
     </footer>
   {% endblock %}
 {% endif %}
-</div>
