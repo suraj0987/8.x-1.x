@@ -129,6 +129,7 @@ table {
 .region-sidebar-first .nav a:hover {
   background-color: #000000;
   color: #ffd700;
+  text-decoration: none;
 }
 .region-sidebar-first li {
   border: 1px solid #b9b9b9;
@@ -170,6 +171,7 @@ header .navbar-toggle .icon-bar {
 header .dropdown-menu a:hover {
   background-color: #000000;
   color: #ffd700;
+  text-decoration: none;
 }
 @media only screen and (max-width: 480px) {
   header .navbar-toggle {
