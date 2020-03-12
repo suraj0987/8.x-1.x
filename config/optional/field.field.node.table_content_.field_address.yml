@@ -7,6 +7,8 @@ dependencies:
     - node.type.table_content_
   module:
     - text
+_core:
+  default_config_hash: mfCqP8wyjymU7AMvpB3H2nlWZE9suX4C1ep4IqZfH9Y
 id: node.table_content_.field_address
 field_name: field_address
 entity_type: node

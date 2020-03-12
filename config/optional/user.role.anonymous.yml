@@ -1,4 +1,4 @@
-uuid: 0b11c31e-837d-4cb1-a423-c844d6a07e9a
+uuid: 534963dc-690c-4a01-b633-ba5d8dcd7aaf
 langcode: en
 status: true
 dependencies: {  }
@@ -12,9 +12,5 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
-  - 'create article content'
-  - 'create page content'
-  - 'create table_content_ content'
   - 'search content'
   - 'use text format restricted_html'
-  - 'view media'

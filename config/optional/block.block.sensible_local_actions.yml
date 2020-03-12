@@ -1,0 +1,20 @@
+uuid: b70c6e91-d191-48a5-a307-6127339f8adc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sensible
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: sensible_local_actions
+theme: sensible
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

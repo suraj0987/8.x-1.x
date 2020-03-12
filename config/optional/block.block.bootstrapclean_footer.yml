@@ -1,3 +1,4 @@
+uuid: 878b2e4a-768b-41ff-97e8-c9042a55c4a5
 langcode: en
 status: true
 dependencies:
@@ -8,6 +9,7 @@ dependencies:
   theme:
     - bootstrapclean
 _core:
+  default_config_hash: ItKwx7oAx6JDNQZD5ZOQmQcOIYwsHiFSd9Q8ebiQWCw
 id: bootstrapclean_footer
 theme: bootstrapclean
 region: footer

@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - bootstrapclean
+_core:
+  default_config_hash: X-SnuOzW6avTX2dKYsLlutkMQQZ9X4JnwvcH5FmAJfE
 id: sitebranding
 theme: bootstrapclean
 region: site_branding

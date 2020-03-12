@@ -1,9 +1,11 @@
+uuid: 045c0ec6-5806-4c46-a823-522ffb3890b4
 langcode: en
 status: true
 dependencies:
   theme:
     - bootstrapclean
 _core:
+  default_config_hash: iAkzVIuQhh-TxEfrLCIZqJrT09rj9dAYuzIRj2xB6EU
 id: bootstrapclean_local_tasks
 theme: bootstrapclean
 region: content

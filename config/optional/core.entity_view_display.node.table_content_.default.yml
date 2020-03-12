@@ -10,6 +10,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: JFptwTg8OLgH_9eH9rKBDp2uUpl85pccIN7z9pBzbys
 id: node.table_content_.default
 targetEntityType: node
 bundle: table_content_

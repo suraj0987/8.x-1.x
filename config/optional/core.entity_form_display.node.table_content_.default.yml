@@ -10,6 +10,8 @@ dependencies:
   module:
     - path
     - text
+_core:
+  default_config_hash: QHRsR8t0ndKbLj1G91Y2mHX1sWJQsNFi5ZvOgjxhVvI
 id: node.table_content_.default
 targetEntityType: node
 bundle: table_content_
@@ -86,6 +88,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
 hidden: {  }

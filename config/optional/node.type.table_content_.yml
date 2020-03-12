@@ -8,6 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+_core:
+  default_config_hash: b62KRehoMf38uxDUUisKqNQ_tSkY-AyuY-JYoDhBV0g
 name: 'Table Content'
 type: table_content_
 description: ''

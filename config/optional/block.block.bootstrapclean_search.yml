@@ -1,3 +1,4 @@
+uuid: 64458ca1-e1e1-4084-b700-3e4324eb46e6
 langcode: en
 status: false
 dependencies:
@@ -6,6 +7,7 @@ dependencies:
   theme:
     - bootstrapclean
 _core:
+  default_config_hash: S4DRPqV9tGyNxNTpI9F--Qxsosg_68OqBVcycfVTiIs
 id: bootstrapclean_search
 theme: bootstrapclean
 region: sidebar_first
@@ -17,4 +19,5 @@ settings:
   label: Search
   provider: search
   label_display: visible
+  page_id: ''
 visibility: {  }

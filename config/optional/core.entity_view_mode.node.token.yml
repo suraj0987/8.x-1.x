@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: PvmQXig_0kR_1o21Vxeu8Hj1bJ0HyfY0y19ZDqD2mug
 id: node.token
 label: Token
 targetEntityType: node

@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - comment
+_core:
+  default_config_hash: SBuMHJPSR86zbNRdCR7hfXHzYRRIor1oxO9EoCQXHa0
 id: comment.token
 label: Token
 targetEntityType: comment

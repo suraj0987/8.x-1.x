@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - tour
+_core:
+  default_config_hash: GaHoi-MRIpdgtmM6hGl4Is_-5Xxa8iwoy62D9SrsRQs
 id: tour.token
 label: Token
 targetEntityType: tour

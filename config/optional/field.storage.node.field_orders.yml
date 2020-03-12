@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: aFO34pVc-Kzx6zOJO2FZSXd1et84I6HKflC9izSL-OI
 id: node.field_orders
 field_name: field_orders
 entity_type: node

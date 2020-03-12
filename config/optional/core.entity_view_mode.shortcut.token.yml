@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - shortcut
+_core:
+  default_config_hash: DGG-irfGkY6fSH-PtpCv7o572HvMhixwnRC6JK7ATwI
 id: shortcut.token
 label: Token
 targetEntityType: shortcut

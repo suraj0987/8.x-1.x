@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - contact
+_core:
+  default_config_hash: MDoXpRwgJuq2UuALY52vE0TAq6WM_rLOvdvIzgzBmeE
 id: contact_message.token
 label: Token
 targetEntityType: contact_message

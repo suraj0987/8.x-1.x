@@ -1,0 +1,22 @@
+uuid: 677b6b90-a8c0-4c35-ab60-003b0bd6cade
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sensible
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: sensible_content
+theme: sensible
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

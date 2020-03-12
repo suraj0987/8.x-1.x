@@ -1,3 +1,4 @@
+uuid: 5df44f5a-468c-41db-8065-21505aebe36b
 langcode: en
 status: false
 dependencies:
@@ -6,6 +7,7 @@ dependencies:
   theme:
     - bootstrapclean
 _core:
+  default_config_hash: SoiF5OKHjzwZbq9XONfF2G6e9Ho7lg1KXCHGkT4gjwU
 id: bootstrapclean_messages
 theme: bootstrapclean
 region: highlighted

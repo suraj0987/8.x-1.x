@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: 84JMiVOGFbgHLg1tmTgUDa3y3WVRM4ecHShDreVqTm8
 id: user.token
 label: Token
 targetEntityType: user

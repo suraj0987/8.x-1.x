@@ -1,11 +1,11 @@
-uuid: 85c3b893-8947-4e86-8bd7-c3192511b0fa
-name: Drupal
-mail: ok@okemail.com
+uuid: e9506d4b-a2bc-4489-81f4-00612617312c
+name: 'Test Site'
+mail: ok@email.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /orders
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

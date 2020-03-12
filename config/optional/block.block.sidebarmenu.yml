@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - bootstrapclean
+_core:
+  default_config_hash: WQW8L5mnCdWvlp8tt-SlhJsNJ-m92xmxQFN-s9OKS3Q
 id: sidebarmenu
 theme: bootstrapclean
 region: sidebar_first
@@ -18,7 +20,7 @@ settings:
   id: 'system_menu_block:sidebar-menu'
   label: 'Sidebar Menu'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
   expand_all_items: false

@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - block
+_core:
+  default_config_hash: WOBNlQvIiEiG3t0L9lHLAqb2DgFrhKGfuiK0zGTn8uA
 id: block.token
 label: Token
 targetEntityType: block

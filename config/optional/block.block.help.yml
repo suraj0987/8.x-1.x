@@ -6,6 +6,8 @@ dependencies:
     - help
   theme:
     - bootstrapclean
+_core:
+  default_config_hash: ogXzljZRenzoSBY_sMe_aQOtSP1b2ZDawkILV-qxugM
 id: help
 theme: bootstrapclean
 region: help

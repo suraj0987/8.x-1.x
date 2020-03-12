@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - taxonomy
+_core:
+  default_config_hash: zz7l8HcIHkbmy1TGN6OqQsV9FQBnhIf8UFYkNMatOIk
 id: taxonomy_term.token
 label: Token
 targetEntityType: taxonomy_term
