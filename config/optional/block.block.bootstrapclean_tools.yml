@@ -1,4 +1,3 @@
-uuid: f3b6e8ac-e46a-436d-9fc5-676651975873
 langcode: en
 status: true
 dependencies:
@@ -9,7 +8,6 @@ dependencies:
   theme:
     - bootstrapclean
 _core:
-  default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
 id: bootstrapclean_tools
 theme: bootstrapclean
 region: sidebar_first

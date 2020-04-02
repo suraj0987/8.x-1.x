@@ -1,4 +1,3 @@
-uuid: 99fbc899-b6e7-401e-bcdf-db8be8adf645
 langcode: en
 status: true
 dependencies:
@@ -7,7 +6,6 @@ dependencies:
   theme:
     - bootstrapclean
 _core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: bootstrapclean_breadcrumbs
 theme: bootstrapclean
 region: header
