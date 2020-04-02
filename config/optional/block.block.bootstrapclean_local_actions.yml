@@ -1,0 +1,20 @@
+uuid: e06d11ad-efd2-45a5-8d4b-b67d3378aec6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrapclean
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bootstrapclean_local_actions
+theme: bootstrapclean
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

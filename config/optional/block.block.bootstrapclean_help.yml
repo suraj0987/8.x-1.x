@@ -1,0 +1,22 @@
+uuid: 11519817-93e1-4ded-8f27-c0846e941bd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bootstrapclean
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: bootstrapclean_help
+theme: bootstrapclean
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

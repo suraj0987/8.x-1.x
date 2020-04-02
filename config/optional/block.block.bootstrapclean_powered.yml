@@ -1,0 +1,22 @@
+uuid: 6e6c7138-5607-4888-ba00-dab561980811
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrapclean
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: bootstrapclean_powered
+theme: bootstrapclean
+region: footer
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
